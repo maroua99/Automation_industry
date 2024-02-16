@@ -1,0 +1,95 @@
+
+header {
+    background-color: #194E48; 
+    color: #fff; 
+    padding: 10px;
+    display: flex; 
+   
+     
+}
+
+/* Styles pour la liste non ordonnée (ul) dans l'en-tête */
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    align-items: center; 
+    margin-left: 700px;
+   
+}
+
+/* Styles pour les éléments de la liste (li) dans l'en-tête */
+li {
+    margin-right: 30px; 
+}
+
+/* Styles pour les liens (a) dans l'en-tête */
+a {
+    text-decoration: none;  
+    color: #fff; 
+}
+
+/* Styles pour le logo dans l'en-tête */
+#logo-header {
+    max-width: 100px; 
+    height: auto;
+    margin-right: 20px; 
+}
+body{
+    background-color:#194E48;
+}
+footer{
+    background-color: #194E48; 
+    color: #fff; 
+    padding: 10px;
+    display: flex;
+}
+
+/* Acceuil */
+#section1{
+    margin-top: 50px;
+ text-align: center;
+
+}
+h1{
+    color: #B3D337;
+    font-size: 30px;
+    font-family: 'JT Collect Regular Text', sans-serif;
+}
+p{
+    color: #fff;
+    font-family :Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
+#section2{
+    text-align: center;
+ font-family: 'JT Collect Regular Text', sans-serif;
+ background-color: #B3D337;
+ color: #194E48;
+}
+#h1section2{
+    color: #194E48;
+    margin-top: 20px;
+    text-align: end;
+    margin-right: 50px;
+    padding-top: 40px;
+}
+#psection2{
+    color: #fff;
+    text-align: start;
+    font-family: 'Cordia New Regular';
+    padding-left: 800px;
+    margin-bottom: 80px;
+}
+#list-section2{
+    display:flex;
+}
+#inscription{
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
