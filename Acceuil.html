@@ -10,8 +10,7 @@
 
     <Header>
         <img id="logo-header"   src="logo.PNG" alt=""/>
-
-        <ul>
+        <ul class="headerlist">
             <li> <a href="#acceuil">Acceuil</a></li>
             <li> <a href="#Qui somme-nous">Qui somme-nous</a></li>
             <li id="identifier"> <a href="S'identifier">S'identifier</a></li>
@@ -21,31 +20,55 @@
     
 
     <Section id="section1">
-        <h1>Plateforme d'échange technologique dans le domaine de l'automatisation industriel.
-            </h1> 
+        <h1 class="h1acceuil">Plateforme d'échange technologique dans le domaine de l'automatisation industriel.</h1> 
         <p>Un investissement d'une heure de votre temps peut engendrer une heure de progrès collectif.</p>
     </Section>
-    <form action="searhcbar">
+    <form class="searhcbar">
         <input type="search" id="search" name="q" placeholder="   Entrez votre mot clef...">
         <input id="serchbutton" type="submit" value="Recherche">
     </form>
 
     <hr class="rounded">
 
-    <section id="section2">
-        <img src="Pics/chekmark1.png" style="height: 50px; width: 50px; align-items: center; margin-left: 170px; margin-top: 40px;">
-        <img src="Pics/chekmark1.png" style="height: 50px; width: 50px; align-items: center; margin-left: 170px;margin-top: 40px">
-        <img src="Pics/chekmark1.png" style="height: 50px; width: 50px; align-items: center; margin-left: 170px;margin-top: 40px">
-               <p>Partager les avancées technologiques avec la communauté</p>
-               <p>Une Plateforme collaborative favorisant la recherche et la contribution à des solutions techniques.</p>
-               <p>Etablir des réseaux et découvrir des professionnels du secteur</p>
+    <Section class="section3">
+    
+        <div class="invitationsignin1">
+            <a class="card1" href="#">
+                <h3>Publiez vos projets</h3>
+                <p class="small">Partager les avancées technologiques avec la communauté.</p>
+                <div class="go-corner" href="#">
+                </div>
+              </a>
+        </div>
+            
+            <div class="invitationsignin2">
+                <a class="card1" href="#">
+                  <h3>Posez vos question et recevez une reponse</h3>
+                  <p class="small">Une Plateforme collaborative favorisant la recherche et la contribution à des solutions techniques.</p>
+                  <div class="go-corner" href="#">
+                  </div>
+                </a>
+                </div>
 
-    </section>
+                
+            <div class="invitationsignin3">
+                <a class="card1" href="#">
+                  <h3>Communiquez avec a communauté</h3>
+                  <p class="small">Etablir des réseaux et découvrir des professionnels du secteur.</p>
+                  <div class="go-corner" href="#">
+                  </div>
+                </a>
+            
+    </Section>
 
-    <p id="inscription">
-        <h1>Rejoignez la communauté de
-            Automation industry</h1>
-            <p>nous vous invitons à partager des documents
+    <hr class="rounded">
+    
+        <p class="companies">Soutien aux équipes innovantes de..</p>
+
+    <section class="joinus">
+        <h2 class="h2acceuil">Rejoignez la communauté de
+            Automation industry</h2>
+            <p class="joinusp">nous vous invitons à partager des documents
                 liés au domaine industriel tels que mémoires,
                 articles, schémas, etc.
                 Enrichissez vos connaissances en explorant
@@ -53,38 +76,62 @@
                 grâce à des recherches ciblées sur les sujets
                 qui vous intéressent.</p>
     </p>
+    <button class="subscribe-btn">inscription</button>
+    </div>
+  </form>
+</div>
+    </section>       
 
-    <Form id="inscription">
-        <label for="name"> Nom :</label> <br>
-        <input type="text" name="Nom" placeholder="Entrer votre nom"> <br>
-<label for="Prenom"> Prenom : </label> <br>
-<input type="text" placeholder="Entrer votre Prenom"> <br>
-<label for="email"> Email : </label><br>
-<input type="email" placeholder="Entrer votre email"><br>
-<label for="Password">Mot de passe</label><br>
-<input type="password" placeholder="Entrer votre mot de passe"><br>
-<label for="password"> Confirmez votre mot de passe</label> <br>
-<input type="password" placeholder="Confirmez votre mot de passe"><br>
-<p>nous vous invitons à partager des documents
-liés au domaine industriel tels que mémoires
-, articles, schémas, etc. Enrichissez vos 
-connaissances en explorant les documents 
-déjà présents sur la plateforme grâce à des 
-recherches ciblées sur les sujets qui vous intéressent</p>
-<input id="submit-button" type="submit" value="inscription"><br>
-    </Form>
-
+    
    
 
     <footer>
-        <ul id="links">
-            <li> <a href="#acceuil">Acceuil</a></li>
-            <li> <a href="#Qui somme-nous">Qui somme-nous</a></li>
-            <li> <a href="#Communauté">Communauté</a></li>
-            <li id="S'identifier"> <a href="S'identifier">S'identifier</a></li>
+        <hr class="roundedfooter">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Contactez-nous</button>
+            <div id="myDropdown" class="dropdown-content">
+               <Form class="message">
+                      <label for="name"> Nom et prenom:</label> <br>
+                      <input type="text" name="Nom" placeholder="Entrer votre nom et prenom"> <br>
+                      <label for="email"> Email : </label><br>
+                      <input type="email" placeholder="Entrer votre email"><br>
+                      <label for="text"> Message </label><br>
+                      <input type="text" placeholder="Laissez nous un message / feedback"><br>
+                      <input id="message-submit" type="submit" value="Envoyer"><br>
+                          </Form>
+            </div>
+          </div>
+          
+          <script>
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+            
+              }
+            }
+          }
+          </script>
+    
+        <ul class="ulfooter">
+            <li><a href="#acceuil">Acceuil</a></li>
+            <li><a href="#terms and conditions">Terms and Conditions</a></li>
+            <li><a href="#s'inscrir">S'inscrir</a></li>
+            <li><a href="se connecter">Se connecter</a></li>
         </ul>
-        <img id="logo-header"   src="logo.PNG" alt="">
+
+        <p id="author">Designed by // Guesmia Maroua</p>
+               
     </footer>
+       
+       
     
 </body>
 </html>
